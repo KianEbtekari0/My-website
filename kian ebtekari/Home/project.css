@@ -1,0 +1,251 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;1,400;1,700;1,900&display=swap');
+
+html, body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #fff;
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+}
+
+.nav a {
+    display: flex;
+    float: right;
+    margin-left: 2.14285714286vw;
+    position: relative;
+    right: 12.1457142857vw;
+    margin-top: 30px;
+    text-decoration: none;
+    color: #000;
+    font-size: 17px;
+    font-weight: 700;
+}
+
+.nav a:before {
+    content: "";
+    display: flex;
+    height: 3px;
+    width: 0px;
+    border-radius: 10px;
+    position: absolute;
+    background-color: #2060FF;
+    color: #2060FF;
+    top: 22px;
+}
+
+.nav a:hover::before {
+    content: "";
+    height: 3px;
+    width: 25px;
+    border-radius: 10px;
+    display: flex;
+    position: absolute;
+    background-color: #2060FF;
+    color: #2060FF;
+    top: 22px;
+    transition: 0.20s;
+}
+
+.logo {
+    display: flex;
+    float: left;
+    margin-left: 20px;
+    margin-top: 15px;
+    width: 200px;
+    height: 50px;
+}
+
+.text {
+    margin-top: 200px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+
+.card {
+    width: 270px;
+    height: 500px;
+    border-radius: 18px;
+    background-color: white;
+    text-align: center;
+    box-shadow: 5px 5px 15px rgba(214, 214, 214, 0.959);
+    transition: 0.5s;
+    margin-left: 10.4166666667vw;
+    margin-top: 50px;
+}
+
+.card-2 {
+    width: 270px;
+    height: 500px;
+    border-radius: 18px;
+    background-color: white;
+    text-align: center;
+    box-shadow: 5px 5px 15px rgba(214, 214, 214, 0.959);
+    transition: 0.5s;
+    margin-left: 40.1vw;
+    margin-top: -500px;
+}
+
+.card-3 {
+    width: 270px;
+    height: 500px;
+    border-radius: 18px;
+    background-color: white;
+    text-align: center;
+    box-shadow: 5px 5px 15px rgba(214, 214, 214, 0.959);
+    transition: 0.5s;
+    margin-left: 69.50vw;
+    margin-top: -500px;
+}
+
+@media(max-width: 965px) {
+    .card-3 {
+        margin-top: 30px;
+        margin-left: 100px;
+    }
+
+    .card-2 {
+        margin-left: 50vw;
+    }
+
+    .card {
+        margin-left: 100px;
+    }
+}
+
+@media(max-width: 770px) {
+    .card-2 {
+        margin-left: 400px;
+    }
+
+    .card {
+        margin-left: 10.4166666667vw;
+    }
+} 
+
+@media(max-width: 688px) {
+    .card {
+        margin-left: 13.8888888889vw;
+    }
+
+    .card-2 {
+        margin-top: 30px;
+        margin-left: 13.8888888889vw;
+    }
+
+    .card-3 {
+        margin-left: 13.8888888889vw;
+    }
+} 
+
+.card-image {
+    grid-area: image;
+    height: 187px;
+    width: 271px;
+    background: url("image/image.jpg");
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
+    background-size: cover;
+}
+
+.card-2-image {
+    grid-area: image;
+    height: 187px;
+    width: 271px;
+    background: url("image/download.jpg");
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
+    background-size: cover;
+}
+
+.card-3-image {
+    grid-area: image;
+    height: 187px;
+    width: 271px;
+    background: url("image/download (1).jpg");
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
+    background-size: cover;
+}
+
+.card-text {
+    grid-area: text;
+    margin: 25px;
+    width: 250px;
+    margin-left: 10px;
+}
+
+.card-text .date {
+    color: rgb(255,7,119);
+    font-size: 13px;
+}
+
+.card-text p {
+    color: gray;
+    font-size: 15px;
+    font-weight: 300;
+}
+
+.card-text h2 {
+    margin-top: 0px;
+    font-size: 28px;
+}
+
+.card a {
+    text-decoration: none;
+    width: 100px;
+    height: 40px;
+    display: flex;
+    color: #FFF;
+    background-color: #2060FF;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    margin-top: -15px;
+    margin-left: 85px;
+    box-shadow: 0px 0px 1px 1px rgb(202, 202, 202);
+}
+
+.card-2 a {
+    text-decoration: none;
+    width: 100px;
+    height: 40px;
+    display: flex;
+    color: #FFF;
+    background-color: #2060FF;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    margin-top: -15px;
+    margin-left: 85px;
+    box-shadow: 0px 0px 1px 1px rgb(202, 202, 202);
+}
+
+.card-3 a {
+    text-decoration: none;
+    width: 100px;
+    height: 40px;
+    display: flex;
+    color: #FFF;
+    background-color: #2060FF;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    margin-top: -15px;
+    margin-left: 85px;
+    box-shadow: 0px 0px 1px 1px rgb(202, 202, 202);
+}
+
+@media(max-width: 425px) {
+    .logo {
+        display: none;
+    }
+
+    .nav a {
+        margin-left: 20px;
+    }
+}

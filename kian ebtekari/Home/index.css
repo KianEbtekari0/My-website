@@ -1,0 +1,125 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;1,400;1,700;1,900&display=swap');
+
+html, body {
+    background-color: #fff;
+    font-family: 'Roboto', sans-serif;
+    overflow-y: hidden;
+    overflow-x: hidden;
+    padding: 0;
+    margin: 0;
+}
+
+.nav a {
+    display: flex;
+    float: right;
+    margin-left: 2.14285714286vw;
+    position: relative;
+    right: 12.1457142857vw;
+    margin-top: 30px;
+    text-decoration: none;
+    color: #000;
+    font-size: 17px;
+    font-weight: 700;
+}
+
+.nav a:before {
+    content: "";
+    display: flex;
+    height: 3px;
+    width: 0px;
+    border-radius: 10px;
+    position: absolute;
+    background-color: #2060FF;
+    color: #2060FF;
+    top: 22px;
+}
+
+.nav a:hover::before {
+    content: "";
+    height: 3px;
+    width: 28px;
+    border-radius: 10px;
+    display: flex;
+    position: absolute;
+    background-color: #2060FF;
+    color: #2060FF;
+    top: 22px;
+    transition: 0.20s;
+}
+
+.logo {
+    display: flex;
+    float: left;
+    margin-left: 20px;
+    margin-top: 15px;
+    width: 200px;
+    height: 50px;
+}
+
+.all-welcome {
+    margin-top: 250px;
+    margin-left: 6.40857142857vw;
+}
+
+.name {
+    font-size: 40px;
+}
+
+.program {
+    position: relative;
+    top: -75px;
+    left: 85px;
+    font-size: 40px;
+    color: #2260ff;
+}
+
+.lorem {
+    margin-top: -90px;
+    font-size: 19px;
+}
+
+.btn-here {
+    position: absolute;
+    width: 104px;
+    height: 43px;
+    background: #2060FF;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 7px;
+    border: none;
+    color: #FFF;
+    cursor: pointer;
+}
+
+.btn-project {
+    position: absolute;
+    width: 104px;
+    height: 43px;
+    margin-left: 120px;
+    background: #808bed;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 7px;
+    border: none;
+    color: #FFF;
+    cursor: pointer;
+}
+
+.circle {
+    display: flex;
+    float: right;
+    margin-top: -362px;
+}
+
+.line {
+    display: flex;
+}
+
+@media(max-width: 425px) {
+    .logo {
+        display: none;
+    }
+
+    .nav a {
+        margin-left: 20px;
+    }
+}
